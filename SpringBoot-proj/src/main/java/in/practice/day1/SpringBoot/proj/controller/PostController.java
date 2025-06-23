@@ -61,7 +61,7 @@ public class PostController {
     public ResponseEntity<PostDto> updatePost(@RequestBody PostDto postDto, @PathVariable(name = "id") long id){
 
         PostDto postResponse = iPostService.updatePost(postDto, id);
-
+        System.out.println("Avinash");
         return new ResponseEntity<>(postResponse, HttpStatus.OK);
     }
 
