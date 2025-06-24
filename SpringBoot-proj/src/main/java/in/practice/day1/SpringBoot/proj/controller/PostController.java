@@ -23,6 +23,7 @@ public class PostController {
     @PostMapping(value = "/createPost")
     public ResponseEntity<?> createPost(@Valid @RequestBody PostDto postDto){
 
+         System.out.println("this is a creating post.");
           System.out.println("this is a creating post.");
           return iPostService.createPost(postDto);
 
