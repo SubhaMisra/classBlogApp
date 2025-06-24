@@ -83,6 +83,8 @@ public class PostController {
     public ResponseEntity<String> deletePostByTitle(@PathVariable(name = "title") String title){
 
         iPostService.deletePostByTitle(title);
+        
+        System.out.println("Prajwal changes something");
 
         return new ResponseEntity<>("Post entity deleted successfully.", HttpStatus.OK);
     }
