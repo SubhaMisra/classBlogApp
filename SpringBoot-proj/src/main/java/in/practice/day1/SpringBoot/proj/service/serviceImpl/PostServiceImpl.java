@@ -32,6 +32,7 @@ public class PostServiceImpl implements IPostService {
            Post post = mapToEntity(postDto);
            Post newPost = postRepository.save(post);
 
+           System.out.println("=============================");
            PostDto postResponse = mapToDTO(newPost);
            return new ResponseEntity<>(postDto, HttpStatus.CREATED);
        } catch (Exception e) {
