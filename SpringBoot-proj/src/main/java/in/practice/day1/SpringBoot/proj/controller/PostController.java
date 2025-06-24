@@ -23,7 +23,7 @@ public class PostController {
     @PostMapping(value = "/createPost")
     public ResponseEntity<?> createPost(@Valid @RequestBody PostDto postDto){
 
-          System.out.println("");
+          System.out.println("this is a creating post.");
           return iPostService.createPost(postDto);
 
 //        return new ResponseEntity<>(dto, HttpStatus.CREATED);
@@ -39,7 +39,7 @@ public class PostController {
             @RequestParam(value = "sortDir", defaultValue = "asc", required = false) String sortDir
 
     ){
-        System.out.println("");
+        System.out.println("this is a used to getting all the post in a list.");
         return iPostService.getAllPosts(pageNo, pageSize, sortBy, sortDir);
     }
 
