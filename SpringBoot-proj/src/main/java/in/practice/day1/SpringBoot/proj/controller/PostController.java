@@ -41,6 +41,7 @@ public class PostController {
 
     ){
         System.out.println("this is a used to getting all the post in a list.");
+        System.out.println("this is a used to getting all the post in a list.");
         return iPostService.getAllPosts(pageNo, pageSize, sortBy, sortDir);
     }
 
