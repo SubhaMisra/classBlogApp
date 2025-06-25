@@ -71,6 +71,9 @@ public class PostServiceImpl implements IPostService {
         //      List<PostDto> collect = posts.stream().map(PostServiceImpl::mapToDto).collect(Collectors.toList());
         List<PostDto> dtos = posts.stream().map(p->mapToDTO(p)).collect(Collectors.toList());
 
+        System.out.println("prajwal changes in git branch");
+        System.out.println("prajwal 2 changes in git branch ");
+
         return dtos;
     }
 
