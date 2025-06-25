@@ -25,7 +25,7 @@ public class PostController {
 
          System.out.println("this is a creating post.");
           System.out.println("this is a creating post.");
-          System.out.println("Gunadeep Change");
+          System.out.println("Gunadeep Changes");
           System.out.println("syed");
           return iPostService.createPost(postDto);
 
