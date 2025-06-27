@@ -6,7 +6,7 @@ import lombok.Data;
 @Data
 public class PostDto {
     private long id;
-    @Size(max = 2,message = "Size can't be more than 2 characters")
+    @Size(max = 3,message = "Size can't be more than 3 characters")
     private String title;
     private String description;
     private String content;
