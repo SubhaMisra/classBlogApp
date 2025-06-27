@@ -28,15 +28,15 @@ public class PostServiceImpl implements IPostService {
     @Override
     public ResponseEntity<?> createPost(PostDto postDto) {
 
-       try {
+//       try {
            Post post = mapToEntity(postDto);
            Post newPost = postRepository.save(post);
 
            PostDto postResponse = mapToDTO(newPost);
            return new ResponseEntity<>(postDto, HttpStatus.CREATED);
-       } catch (Exception e) {
-           throw new ResourceNotFoundException("Post can't be created");
-       }
+//       } catch (Exception e) {
+//           throw new ResourceNotFoundException("Post can't be created");
+//       }
 
     }
 
